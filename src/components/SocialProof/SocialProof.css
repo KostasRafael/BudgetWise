@@ -1,0 +1,24 @@
+.social-proof {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-proof__label {
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.social-proof__row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-proof__rating {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-body);
+}

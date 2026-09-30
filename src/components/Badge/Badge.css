@@ -1,0 +1,33 @@
+.badge {
+  display: inline-flex;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.badge--md {
+  padding: 6px 12px;
+  border-radius: 100px;
+  font-size: 13px;
+}
+
+.badge--sm {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+}
+
+.badge--success {
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+}
+
+.badge--danger {
+  background: var(--color-danger-soft);
+  color: var(--color-danger);
+}
+
+.badge--neutral {
+  background: var(--color-page);
+  color: var(--color-body);
+  font-weight: 400;
+}

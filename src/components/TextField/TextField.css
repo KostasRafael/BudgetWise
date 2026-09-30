@@ -1,0 +1,71 @@
+.text-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.text-field__label {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-body);
+}
+
+.text-field__box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  transition: border-color 0.15s;
+}
+
+.text-field__box:focus-within {
+  border-color: var(--color-accent);
+}
+
+.text-field__box--prefixed {
+  gap: 8px;
+}
+
+.text-field__prefix {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-body);
+}
+
+.text-field__icon {
+  flex-shrink: 0;
+}
+
+.text-field__input {
+  flex: 1;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: none;
+  font: inherit;
+  font-size: 15px;
+  line-height: normal;
+  color: var(--color-ink);
+}
+
+.text-field__input::placeholder {
+  color: var(--color-muted);
+  opacity: 1;
+}
+
+.text-field__input.is-empty {
+  color: var(--color-muted);
+}
+
+.text-field__input[type='date']::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.text-field__input[type='date']::-webkit-datetime-edit,
+.text-field__input[type='date']::-webkit-datetime-edit-fields-wrapper {
+  padding: 0;
+}

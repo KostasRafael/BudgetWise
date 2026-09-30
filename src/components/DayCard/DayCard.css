@@ -1,0 +1,63 @@
+.day-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+}
+
+.day-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.day-card__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  line-height: normal;
+}
+
+.day-card__date {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-ink);
+}
+
+.day-card__weekday {
+  font-size: 12px;
+  color: var(--color-body);
+}
+
+.day-card__subtotal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-border);
+  line-height: normal;
+}
+
+.day-card__subtotal-label {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--color-body);
+}
+
+.day-card__subtotal-value {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-ink);
+}
+
+.day-card__expenses {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.day-card__empty {
+  font-size: 13px;
+  line-height: normal;
+  color: var(--color-muted);
+}

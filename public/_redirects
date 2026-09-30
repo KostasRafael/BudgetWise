@@ -1,0 +1,7 @@
+# Netlify rules, first match wins. Vite copies this file into dist/ on build.
+
+# Proxy API calls to the backend so the browser sees one site and sends the auth cookie.
+/api/*  https://budgetwise-api-xs0y.onrender.com/api/:splat  200
+
+# Let react-router handle every other path (otherwise reloading /budgets returns a 404).
+/*  /index.html  200

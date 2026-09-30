@@ -1,0 +1,6 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Redirect and proxy rules live in public/_redirects (Netlify reads those first).
+# Leave VITE_API_URL unset in Netlify so the app calls /api on its own domain.

@@ -1,0 +1,130 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  font-family: var(--font-body);
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.btn--sm {
+  padding: 9px 17px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.btn--md {
+  width: 180px;
+  padding: 13px 23px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.btn--compact {
+  padding: 11px 19px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.btn--xs {
+  padding: 7px 13px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.btn--tiny {
+  padding: 5px 9px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.btn--primary {
+  background: var(--color-ink);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: #1e293b;
+}
+
+.btn--secondary {
+  background: var(--color-surface);
+  border-color: var(--color-border);
+  color: var(--color-ink);
+}
+
+.btn--secondary:hover {
+  background: var(--color-page);
+}
+
+.btn--outline {
+  background: var(--color-surface);
+  border-color: var(--color-border);
+  color: var(--color-body);
+}
+
+.btn--outline:hover {
+  background: var(--color-page);
+  color: var(--color-ink);
+}
+
+.btn--soft-success {
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.btn--soft-success:hover {
+  background: #d1fae5;
+}
+
+.btn--soft-danger {
+  background: var(--color-danger-soft);
+  color: var(--color-danger);
+}
+
+.btn--soft-danger:hover {
+  background: #fee2e2;
+}
+
+.btn--subtle {
+  background: var(--color-page);
+  border-color: var(--color-border);
+  color: var(--color-ink);
+}
+
+.btn--subtle:hover {
+  background: var(--color-border);
+}
+
+.btn--link {
+  width: auto;
+  padding: 0;
+  background: none;
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--color-body);
+}
+
+.btn--link:hover {
+  color: var(--color-ink);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.btn--block {
+  width: 100%;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

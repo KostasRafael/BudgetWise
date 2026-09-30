@@ -1,0 +1,12 @@
+.avatar-group {
+  display: flex;
+}
+
+.avatar-group__item {
+  width: 36px;
+  height: 36px;
+}
+
+.avatar-group__item:not(:last-child) {
+  margin-right: -10px;
+}

@@ -1,0 +1,41 @@
+:root {
+  --color-ink: #0f172a;
+  --color-body: #475569;
+  --color-muted: #94a3b8;
+  --color-border: #e2e8f0;
+  --color-surface: #ffffff;
+  --color-page: #f8fafc;
+  --color-accent: #10b981;
+  --color-accent-soft: #ecfdf5;
+  --color-danger: #ef4444;
+  --color-danger-soft: #fef2f2;
+
+  --font-heading: 'Outfit', system-ui, sans-serif;
+  --font-body: 'Geist', system-ui, sans-serif;
+
+  font-family: var(--font-body);
+  color: var(--color-body);
+  background: var(--color-page);
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+p {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--color-page);
+}
+
+img {
+  display: block;
+}

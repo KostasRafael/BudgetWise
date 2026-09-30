@@ -1,0 +1,32 @@
+.auth-prompt {
+  font-size: 14px;
+  color: var(--color-body);
+  white-space: nowrap;
+}
+
+.auth-prompt__link {
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.auth-prompt--nav {
+  font-weight: 500;
+}
+
+.auth-prompt--nav .auth-prompt__link {
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.auth-prompt--inline .auth-prompt__link {
+  font-weight: 600;
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .auth-prompt--nav {
+    white-space: normal;
+    text-align: right;
+  }
+}
