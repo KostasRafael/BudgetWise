@@ -13,7 +13,6 @@ import { fetchBudget, saveBudget, toMonthKey } from '../api/budgets.js'
 import { formatCurrency } from '../utils/format.js'
 import { toDateInputValue } from '../utils/dates.js'
 import { downloadCsv } from '../utils/exportCsv.js'
-import profileAvatar from '../assets/avatars/profile.png'
 import './Dashboard.css'
 
 // A single expense above this share of the budget is highlighted in red.
@@ -143,8 +142,6 @@ export default function Dashboard() {
       <Navbar>
         <UserProfile
           name={user?.name ?? user?.email ?? 'My Account'}
-          tier="Premium Tier"
-          avatar={profileAvatar}
           settingsTo="/settings"
         />
         <Button variant="subtle" size="sm" onClick={handleLogout}>

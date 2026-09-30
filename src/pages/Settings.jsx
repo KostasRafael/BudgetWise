@@ -6,7 +6,6 @@ import ProfileForm from '../components/ProfileForm/ProfileForm.jsx'
 import PasswordForm from '../components/PasswordForm/PasswordForm.jsx'
 import { clearSession, getCurrentUser, logout } from '../api/auth.js'
 import { changePassword, updateProfile } from '../api/users.js'
-import profileAvatar from '../assets/avatars/profile.png'
 import './Settings.css'
 
 export default function Settings() {
@@ -45,7 +44,7 @@ export default function Settings() {
           <Link className="settings__back" to="/dashboard">
             Back to dashboard
           </Link>
-          <UserProfile name={user?.name ?? user?.email ?? 'My Account'} tier="Premium Tier" avatar={profileAvatar} />
+          <UserProfile name={user?.name ?? user?.email ?? 'My Account'} />
         </div>
         <Button variant="subtle" size="sm" onClick={handleLogout}>
           Log Out

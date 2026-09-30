@@ -41,9 +41,19 @@ export async function login({ email, password }) {
     method: 'POST',
     body: JSON.stringify({ email, password }),
   })
-  const user = data?.user ?? { email }
+  const user = toSessionUser(data, email)
   saveCurrentUser(user)
   return user
+}
+
+// The user may come back as { user }, { data: { user } }, { data } or as top-level fields.
+function toSessionUser(data, fallbackEmail) {
+  const source = data?.user ?? data?.data?.user ?? data?.data ?? data ?? {}
+  return {
+    id: source.id ?? source._id,
+    name: source.name ?? source.fullName ?? source.username,
+    email: source.email ?? fallbackEmail,
+  }
 }
 
 /** Asks the server to clear the cookie, then forgets the user locally. */
